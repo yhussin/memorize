@@ -6,5 +6,10 @@ class CreateTexts < ActiveRecord::Migration[6.1]
 
       t.timestamps
     end
+
+    create_table :lines do |t|
+      t.belongs_to :text, index: true, foreign_key: true
+      t.timestamps
+    end
   end
 end
