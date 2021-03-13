@@ -1,0 +1,10 @@
+
+<p>Find me in app/views/texts/index.html.erb</p>
+<h3>Choose one:</h3>
+<ul>
+  <% @texts.each do |text| %>
+    <li>
+      <%= text.name %>
+    </li>
+    <% end %>
+</ul>

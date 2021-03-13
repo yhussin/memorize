@@ -1,3 +1,3 @@
 class Text < ApplicationRecord
-    has_many: lines
+  has_many :lines
 end
