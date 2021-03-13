@@ -4,7 +4,9 @@
 <ul>
   <% @texts.each do |text| %>
     <li>
-      <%= text.name %>
+      <a href ="/texts/<%= text.id %>">
+        <%= text.name %>
+      </a>
     </li>
     <% end %>
 </ul>

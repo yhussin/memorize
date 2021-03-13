@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # 
   root to: "home#index"
   get "/texts", to: "texts#index"
+  get "/texts/:id", to: "texts#show"
 end
