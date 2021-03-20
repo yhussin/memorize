@@ -3,6 +3,7 @@ class CreateTexts < ActiveRecord::Migration[6.1]
     create_table :texts do |t|
       t.string :name
       # do I need to manually add ID to schema?
+      t.references :lines, null: false, foreign_key: true
 
       t.timestamps
     end
