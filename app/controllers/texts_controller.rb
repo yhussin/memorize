@@ -7,3 +7,6 @@ class TextsController < ApplicationController
     @text = Text.find(params[:id])
   end
 end
+
+
+# search for devise login 

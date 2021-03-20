@@ -3,7 +3,7 @@ class CreateLines < ActiveRecord::Migration[6.1]
     create_table :lines do |t|
       t.integer :line_number
       t.string :content
-      t.references :text, null: false, foreign_key: true
+      t.belongs_to :text, null: false, foreign_key: true
 
       t.timestamps
     end
